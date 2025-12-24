@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Student Management System</h1>
+
+<section>
+    <h2>Register Student</h2>
+    <input id="reg_name" placeholder="Student Name">
+    <input id="reg_mobile" placeholder="Mobile Number">
+    <input id="reg_email" placeholder="Email">
+    <input id="reg_branch" placeholder="Branch">
+
+    <label>
+        <input type="checkbox" id="reg_passed_out">
+        Passed Out
+    </label>
+
+    <button onclick="registerStudent()">Register</button>
+</section>
+
+<section>
+    <h2>Retrieve Student</h2>
+    <input id="get_id" placeholder="Student ID">
+    <button onclick="getStudent()">Retrieve</button>
+    <pre id="student_result"></pre>
+</section>
+
+<section>
+    <h2>Update Student</h2>
+    <input id="upd_id" placeholder="Student ID">
+    <input id="upd_name" placeholder="Student Name">
+    <input id="upd_mobile" placeholder="Mobile Number">
+    <input id="upd_email" placeholder="Email">
+    <input id="upd_branch" placeholder="Branch">
+
+    <label>
+        <input type="checkbox" id="upd_passed_out">
+        Passed Out
+    </label>
+
+    <button onclick="updateStudent()">Update</button>
+</section>
+
+<section>
+    <h2>Delete Student</h2>
+    <input id="del_id" placeholder="Student ID">
+    <button onclick="deleteStudent()">Delete</button>
+</section>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
